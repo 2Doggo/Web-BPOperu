@@ -1,86 +1,85 @@
 /* src/components/Header.css */
 
 .header {
-  background-color: #e0efea;  
-  padding: 10px 0;             /* Espaciado superior e inferior */
-  text-align: center;          /* Centra el contenido dentro del header */
-  position: fixed;             /* Fija el header en la parte superior */
-  top: 0;                      /* Fija el header al tope de la ventana */
-  width: 100%;                 /* Asegura que el header cubra todo el ancho */
-  z-index: 1000;               /* Asegura que el header esté por encima de otros elementos */
+  background-color: #ffffff;
+  padding: 10px 0; /* Espaciado superior e inferior */
+  text-align: center; /* Centra el contenido dentro del header */
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0; /* Fija el header al tope de la ventana */
+  width: 100%; /* Asegura que el header cubra todo el ancho */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo del header */
   transition: 0.3s;
 }
 
 .logo-container {
   display: flex;
-  justify-content: center;     
-  align-items: center;  
+  justify-content: center;
+  align-items: center;
   .logo {
-    width: 90px;                 
-    height: auto;                
+    width: 90px;
+    height: auto;
     transition: 0.3s;
-  }       
+  }
 }
 
-.header.scrolled{
+.header.scrolled {
   width: 95vw;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 5px 40px;
   align-items: center;
-  .logo{
+  .logo {
     width: 120px;
   }
   nav.navbar {
     width: -webkit-fill-available;
     ul {
-      list-style-type: none;       /* Elimina los puntos de la lista */
+      list-style-type: none; /* Elimina los puntos de la lista */
       padding: 0;
       margin: 0;
-      display: flex;               /* Muestra los elementos en una fila */
-      justify-content: center;   
+      display: flex; /* Muestra los elementos en una fila */
+      justify-content: center;
       li {
         display: grid;
-        margin: 0 30px;   
-        padding: 12px;    
-        text-align: left;     
+        margin: 0 30px;
+        padding: 12px;
+        text-align: left;
         align-items: end;
-        a{
+        a {
           display: grid;
-          text-decoration: none;       
-          color: #333;                
-          font-size: 18px;             
-          font-weight: bold;           
+          text-decoration: none;
+          color: #333;
+          font-size: 18px;
+          font-weight: bold;
           transition: color 0.3s;
-          span{
+          span {
             font-size: 12px;
           }
         }
         a:hover {
-          color: #61dafb;              /* Cambia el color a un azul cuando el usuario pasa el mouse */
+          color: #61dafb; /* Cambia el color a un azul cuando el usuario pasa el mouse */
         }
-  
       }
     }
-    li.active{
-      background: #f6f6f6; 
+    li.active {
+      background: #f6f6f6;
     }
-    li.active:hover{
-      color: #61dafb;   
+    li.active:hover {
+      color: #61dafb;
     }
   }
-  .pais-section{
+  .pais-section {
     display: flex;
-    gap:7px;
+    gap: 7px;
     align-items: center;
     cursor: pointer;
-    i.fa-chevron-down{
+    i.fa-chevron-down {
       font-size: 12px;
     }
   }
-  .countries-list{
+  .countries-list {
     background: #fff;
     text-align: left;
     padding: 38px;
@@ -93,7 +92,7 @@
 }
 
 .container-menu {
-  display: flex; 
+  display: flex;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
@@ -126,7 +125,7 @@
           color: #007bff;
         }
       }
-      li:has(.active){
+      li:has(.active) {
         background: #f6f6f6;
       }
     }
@@ -140,24 +139,23 @@
       font-weight: 600;
       margin-bottom: 0px;
     }
-    p{
+    p {
       margin-top: 0;
       .columns-container {
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
-        .column{
+        .column {
           margin-top: 20px;
           text-align: left;
-          a{
-            display: block;
-            span{
-              border-bottom:none;
+          a {
+            display: flex;
+            span {
+              border-bottom: none;
             }
           }
         }
-        .column.beneficios{
-          li{
+        .column.beneficios {
+          li {
             list-style-type: disc;
           }
         }
@@ -169,18 +167,21 @@
         ul {
           text-align: left;
           padding-left: 0;
-          li{
+          li {
             list-style-type: none;
           }
         }
-        a{
+        a {
           display: flex;
+          flex-direction: column;
+          text-decoration: underline;
+          font-size: 13px;
         }
-        span{
+        span {
           border-bottom: 1px solid black;
         }
       }
-      a{
+      a {
         display: flex;
         justify-content: flex-end;
       }
@@ -192,17 +193,16 @@
   visibility: visible;
   opacity: 1;
   padding: 20px;
-  transition:ease-in;
-  .option-menu{
-    li{
+  transition: ease-in;
+  .option-menu {
+    li {
       display: none;
     }
-    li.active{
+    li.active {
       display: block;
     }
   }
 }
-
 
 /*src/components/ContactFloat.js*/
 
@@ -231,22 +231,3 @@
   width: 60px;
   height: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

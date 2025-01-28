@@ -8,7 +8,7 @@
 }
   
 .home-image {
-    background-image: url('/public/ImagenHome.jpg');  
+    background-image: url('/public/imagenHome.png');  
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
